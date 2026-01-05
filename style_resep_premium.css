@@ -1,0 +1,278 @@
+:root {
+    --bg-cream: #fcfbf7;
+    --accent-gold: #FFD41D;
+    --accent-brown: #9b6c2a;
+    --dark-brown: #7d5625;
+    --text-muted: #555;
+    --footer-bg: #dcd3bc;
+    --card-bg: #ffffff;
+}
+
+/* Import Fonts */
+body {
+    font-family: 'Inter', sans-serif;
+    /* Gradient Background yang memudar dari krem ke emas/coklat di bawah */
+    background: linear-gradient(180deg, #F9F4EF 0%, #F5F0E8 50%, #A67C37 100%);
+    min-height: 100vh;
+    color: #4a4a4a;
+}
+
+/* Import Font Serif untuk kesan klasik */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+/* Garis Marun di Atas */
+.top-accent-bar {
+    height: 5px;
+    background-color: #7a4648; 
+    width: 100%;
+}
+
+/* Logo Garis Rasa */
+.brand-font {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 0.85; /* Membuat teks bertumpuk rapat */
+    color: #000;
+    text-decoration: none;
+}
+
+/* Search Bar Tengah */
+.search-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-bar-new {
+    border: 1px solid #ced4da;
+    border-radius: 25px; /* Bentuk kapsul sesuai gambar 1 */
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar-new .input-group-text {
+    background: transparent;
+    border: none;
+    padding-left: 20px;
+    color: #adb5bd;
+}
+
+.search-bar-new .form-control {
+    border: none;
+    padding: 10px 15px;
+    box-shadow: none !important;
+}
+
+/* Home Text */
+.home-text {
+    font-family: 'Playfair Display', serif;
+    font-style: italic; /* Teks Home miring */
+    font-size: 1.2rem;
+    color: #000 !important;
+}
+
+/* Profil Icon */
+.profile-icon {
+    font-size: 1.8rem;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .home-text {
+        display: none;
+    }
+    .search-wrapper {
+        margin: 0 5px;
+    }
+}
+/* Responsivitas Mobile */
+@media (max-width: 768px) {
+    .search-wrapper {
+        margin: 0 10px;
+    }
+    .brand-font {
+        font-size: 1rem;
+    }
+}
+
+/* Page Title */
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-top: 20px;
+}
+
+/* Form Styling */
+.custom-input {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    resize: none; /* Mencegah resize manual */
+    font-size: 0.95rem;
+    color: #888;
+}
+
+.custom-input::placeholder {
+    color: #ccc;
+}
+
+.video-card-new {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    background: #000;
+}
+
+.video-img-box img {
+    width: 100%;
+    height: 200px; /* Tinggi fix agar tidak kegedean */
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.video-bar-bottom {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.video-bar-bottom i {
+    color: #dc3545; /* Merah Youtube */
+    background: white;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* Image Upload Placeholder */
+.image-upload-box {
+    background-color: #D9D9D9; /* Warna abu-abu placeholder */
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.image-upload-box:hover {
+    background-color: #cdcdcd;
+}
+
+/* Ukuran untuk gambar utama (kotak besar) */
+.main-upload {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Kotak sempurna */
+}
+
+/* Ukuran untuk gambar langkah (kotak lebih kecil) */
+.step-upload {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    max-width: 180px; /* Batasi lebar agar tidak terlalu besar di desktop */
+}
+
+/* Sembunyikan input file asli */
+.file-input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Buttons */
+.btn-brown {
+    background-color: #966F33; /* Warna coklat tombol */
+    color: white;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+.btn-brown:hover {
+    background-color: #7a5a29;
+    color: white;
+}
+
+.btn-brown-outline {
+    background-color: transparent;
+    border: 1px solid #966F33; /* Warna border sama dengan background */
+    color: #fff; /* Di gambar terlihat agak putih/terang karena background gelap */
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    border-radius: 4px;
+    background-color: rgba(150, 111, 51, 0.8); /* Semi transparan agar terbaca di bg gelap */
+}
+
+.btn-brown-outline:hover {
+    background-color: #966F33;
+    color: white;
+}
+
+.btn-white {
+    background-color: white;
+    color: #333;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    border-radius: 4px;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0;
+}
+
+/* Spacing Adjustments */
+.step-row textarea {
+    min-height: 120px; /* Tinggi textarea di steps */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .step-upload {
+        max-width: 100%; /* Full width di mobile */
+        margin-bottom: 10px;
+    }
+    
+    .action-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .action-footer > div {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+/* About & Footer */
+.about-text { 
+    line-height: 1.8; 
+    font-size: 0.95rem; 
+    font-style: italic; 
+    text-align: justify;
+}
+
+.footer-area { 
+    background-color: var(--footer-bg); 
+    border-top: 1px solid #ccc; 
+    margin-top: 80px;
+}
+
+/* Adjustments for Images */
+.hero-img, .chef-img { width: 100%; object-fit: cover; }
+.hero-container { margin-top: 60px; }
+
+@media (max-width: 991px) {
+    .hero-title { font-size: 3rem; text-align: center; }
+    .hero-subtitle { margin: 20px auto; text-align: center; }
+    .hero-img { margin-top: 30px; }
+}

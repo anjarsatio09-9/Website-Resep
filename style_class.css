@@ -1,0 +1,141 @@
+/* General Base */
+body {
+    background-color: #F9F5F0;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+.brand-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.search-bar {
+    background: #F4F4F4;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 250px;
+}
+
+/* Typography Page */
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+/* Container Box */
+.class-container-box {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.section-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.view-all {
+    color: #A67C37;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+/* Class Card Styles */
+.class-card {
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    border: 1px solid #eee;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
+}
+
+.class-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.class-body {
+    padding: 20px;
+}
+
+.chef-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.class-date {
+    font-size: 0.85rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.class-time {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+/* Buttons */
+.btn-live {
+    background-color: #A67C37;
+    color: white;
+    border: none;
+    padding: 6px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.btn-upcoming {
+    background-color: white;
+    color: #333;
+    border: 1px solid #333;
+    padding: 6px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+/* Footer */
+footer {
+    background-color: #D4B66B;
+    margin-top: 80px;
+}
+
+.footer-logo { font-size: 2.2rem; }
+.tagline { font-weight: 600; }
+.social-icons i { font-size: 1.3rem; margin-left: 15px; cursor: pointer; }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-title { font-size: 3rem; }
+    .section-title { font-size: 1.2rem; }
+}

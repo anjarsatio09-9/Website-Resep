@@ -1,0 +1,64 @@
+body {
+    background-color: #fcf8f0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.text-serif { font-family: 'Playfair Display', serif; }
+.serif-italic { font-family: 'Playfair Display', serif; font-style: italic; }
+.italic { font-style: italic; }
+
+.logo-text { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.2rem; }
+
+/* Tombol + Tambah Resep (Warna coklat emas sesuai gambar baru) */
+.btn-brown-gold {
+    background-color: #9e6d24;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+}
+
+.section-title { font-family: 'Playfair Display', serif; font-weight: bold; margin-bottom: 15px; }
+
+/* Video Container */
+.video-container {
+    width: 350px;
+    height: 350px;
+    background-color: #ddd;
+}
+.play-button-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+/* Styling Gambar Langkah-langkah */
+.step-img { width: 120px; height: 90px; object-fit: cover; }
+.step-img-small { width: 100px; height: 80px; object-fit: cover; }
+.step-img-tiny { width: 80px; height: 60px; object-fit: cover; }
+
+.step-number {
+    background-color: #000;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 11px;
+}
+
+.btn-brown { background-color: #8b5e28; color: white; border: none; }
+
+.footer-custom { background-color: #e9c46a; margin-top: 50px; }
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .video-container { width: 100%; height: 250px; }
+    .logo-text { font-size: 1.8rem; }
+}

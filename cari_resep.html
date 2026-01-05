@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garis Rasa - Search Results</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style_cari_resep.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg py-3 sticky-top bg-white">
+        <div class="container">
+            <a class="navbar-brand brand-logo" href="#">Garis Rasa</a>
+            <div class="d-flex align-items-center">
+                <div class="search-bar me-4 d-none d-md-block">
+                    <i class="bi bi-search text-muted"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="navbar-nav flex-row gap-3">
+                    <a class="nav-link text-dark" href="#">Home</a>
+                    <a class="nav-link text-dark" href="#">Recipes</a>
+                    <a class="nav-link text-dark" href="#">About</a>
+                    <a class="nav-link text-dark" href="#">Contact</a>
+                    <a class="nav-link text-dark" href="#"><i class="bi bi-person-circle fs-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row align-items-start mb-5">
+            <div class="col-md-4">
+                <h1 class="filter-title mb-4">Filter</h1>
+                
+                <div class="mb-3">
+                    <label class="small fw-bold mb-1">Tampilkan resep dengan:</label>
+                    <div class="filter-input-box">
+                        <i class="bi bi-search"></i>
+                        <input type="text" placeholder="Masukkan bahan...">
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="small fw-bold mb-1">Tampilkan resep tanpa:</label>
+                    <div class="filter-input-box">
+                        <i class="bi bi-search"></i>
+                        <input type="text" placeholder="Masukkan bahan...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 pt-md-5">
+                <div class="filter-premium-card">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <i class="bi bi-crown-fill text-warning"></i>
+                        <span class="fw-bold small">Filter Premium</span>
+                    </div>
+                    <p class="premium-text">Dapatkan resep dengan durasi masak yang kamu inginkan.</p>
+                </div>
+            </div>
+
+            <div class="col-md-5 text-md-end pt-md-5">
+                <button class="btn btn-add-yellow">
+                    <i class="bi bi-plus-lg me-2"></i>Tambah Resep
+                </button>
+            </div>
+        </div>
+
+        <h2 class="search-keyword text-center mb-5">'Ayam Kecap Manis'</h2>
+
+        <div class="results-container">
+            <div class="recipe-card-mini">
+                <img src="https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?auto=format&fit=crop&w=300&q=80" alt="Recipe">
+                <div class="card-mini-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h5 class="recipe-name-mini">Ayam Kecap Manis</h5>
+                        <i class="bi bi-bookmark-fill bookmark-icon"></i>
+                    </div>
+                    <p class="recipe-excerpt-mini">Masakan ayam kecap manis yang praktis dan lezat, perpaduan rasa manis dan gurih...</p>
+                    <div class="recipe-stats-mini">
+                        <span><i class="bi bi-clock"></i> 45 Menit</span>
+                        <span><i class="bi bi-person"></i> 4 Orang</span>
+                    </div>
+                    <div class="recipe-author-mini">
+                        <img src="https://ui-avatars.com/api/?name=Ibu+Isti&background=random" alt="Author">
+                        <span>Ibu Isti</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-card-mini">
+                <img src="https://images.unsplash.com/photo-1606728035253-49e11271b4a4?auto=format&fit=crop&w=300&q=80" alt="Recipe">
+                <div class="card-mini-body">
+                    <div class="d-flex justify-content-between align-items-start">
+                        <h5 class="recipe-name-mini">Ayam Pedas Manis</h5>
+                        <i class="bi bi-bookmark-fill bookmark-icon"></i>
+                    </div>
+                    <p class="recipe-excerpt-mini">Kombinasi pedas dan manis yang pas untuk keluarga di rumah...</p>
+                    <div class="recipe-stats-mini">
+                        <span><i class="bi bi-clock"></i> 30 Menit</span>
+                        <span><i class="bi bi-person"></i> 2 Orang</span>
+                    </div>
+                    <div class="recipe-author-mini">
+                        <img src="https://ui-avatars.com/api/?name=Ibu+Wati&background=random" alt="Author">
+                        <span>Ibu Wati</span>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </main>
+
+    <footer class="footer py-5">
+        <div class="container text-center text-md-start">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h2 class="brand-logo footer-logo">Garis Rasa</h2>
+                </div>
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <p class="tagline mb-1">"Edukasi Kuliner Premium"</p>
+                    <p class="copyright mb-0">© 2023 Garis Rasa</p>
+                </div>
+                <div class="col-md-4 text-md-end footer-contact">
+                    <p>08xx-xxxx-xxxx</p>
+                    <p>Garis.Rasa@gmail.com</p>
+                    <div class="social-icons justify-content-center justify-content-md-end mt-2">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-tiktok"></i>
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

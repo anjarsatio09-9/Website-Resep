@@ -1,0 +1,191 @@
+/* General Base */
+body {
+    background-color: #F9F5F0;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+.brand-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.search-bar {
+    background: #F4F4F4;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 250px;
+}
+
+/* Recipe Detail Specifics */
+.recipe-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 4px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.video-placeholder {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    background-color: #f1f17e; /* Yellow background like image */
+}
+
+.video-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: #ff0000; /* Red play button like YouTube style */
+    cursor: pointer;
+    z-index: 2;
+}
+
+.interaction-icons i {
+    font-size: 2.2rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.interaction-icons i:hover {
+    opacity: 0.7;
+}
+
+/* Text Content */
+.section-heading {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.recipe-details p {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #444;
+}
+
+.list-recipe {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-recipe li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.list-recipe li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #D4B66B;
+    margin-top: 80px;
+}
+
+
+
+.footer-logo { font-size: 2.2rem; }
+.tagline { font-weight: 600; font-family: 'Playfair Display', serif; }
+.social-icons i { font-size: 1.3rem; margin-left: 15px; cursor: pointer; }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .recipe-title { font-size: 2.5rem; }
+    .interaction-icons i { font-size: 1.8rem; }
+}
+
+/* Custom Modal Bottom Sheet */
+.modal-bottom {
+    margin: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 100% !important;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.modal.show .modal-bottom {
+    transform: translateY(0);
+}
+
+.modal-content {
+    height: 60vh; /* Tinggi area komentar 60% dari layar */
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    background-color: white;
+}
+
+.handle-bar {
+    width: 50px;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 10px;
+    margin-top: -10px;
+}
+
+/* Style Input Komentar */
+.comment-input-wrapper {
+    background-color: #D3D3E3; /* Warna abu keunguan seperti di gambar */
+    height: 60px;
+}
+
+.comment-input-wrapper input::placeholder {
+    color: #333;
+    font-weight: 500;
+}
+
+.comment-input-wrapper input:focus {
+    box-shadow: none;
+    background-color: transparent;
+}
+
+/* Mengatur Overlay Modal agar tidak terlalu gelap */
+.modal-backdrop.show {
+    opacity: 0.3;
+}

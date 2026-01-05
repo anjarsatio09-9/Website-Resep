@@ -1,0 +1,218 @@
+    body, html {
+    height: 100%;
+    margin: 0;
+    /* Font serif klasik sesuai gambar */
+    font-family: 'Times New Roman', Times, Baskerville, serif; 
+    color: #000;
+}
+
+.italic { font-style: italic; }
+
+/* --- SIDEBAR --- */
+.sidebar {
+    width: 320px; /* Diperlebar agar tidak sesak */
+    background: #fff;
+    /* Lengkungan hanya di kanan atas sesuai karakteristik desain "folder" */
+    border-radius: 0 50px 0 0; 
+    height: 100vh;
+    z-index: 100;
+    padding: 40px; /* Padding dalam diperbesar */
+    box-shadow: 5px 0 20px rgba(0,0,0,0.03);
+    position: relative;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 20px;
+}
+
+.profile-icon i {
+    font-size: 50px; /* Ukuran ikon profil besar */
+    color: #333;
+    font-weight: lighter; /* Garis tipis */
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-name { 
+    font-weight: bold; 
+    font-size: 18px; 
+    line-height: 1.2;
+}
+
+.profile-handle { 
+    font-size: 14px; 
+    color: #666; 
+    font-style: italic;
+}/* Style untuk tombol Switch to Chef */
+.btn-switch-chef {
+    background-color: #966F33; /* Warna cokelat keemasan */
+    color: white;
+    font-family: 'Times New Roman', serif; /* Font Serif */
+    font-style: italic;
+    font-size: 16px;
+    padding: 8px 0;
+    width: 100%;
+    border: 2px solid black; /* Border hitam tebal */
+    border-radius: 15px; /* Sudut membulat */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-switch-chef:hover {
+    background-color: #7a5a29; /* Warna lebih gelap saat hover */
+    transform: translateY(-2px);
+}
+
+/* Memastikan wrapper profile terlihat interaktif */
+.profile-section-wrapper:hover .profile-name {
+    text-decoration: underline;
+}
+
+/* Garis Pemisah */
+.sidebar-divider {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin: 20px 0 40px 0; /* Jarak lebih lega ke menu */
+    opacity: 1;
+}
+
+/* Menu Navigasi */
+.sidebar-nav .nav-item {
+    margin-bottom: 25px; /* Jarak antar menu renggang */
+}
+
+.sidebar-nav .nav-link {
+    color: #000;
+    font-size: 18px; /* Font menu lebih besar */
+    padding: 0;
+    transition: 0.2s;
+}
+
+.sidebar-nav .nav-link:hover {
+    color: #555;
+    padding-left: 5px;
+}
+
+/* Menu Aktif (Dashboard) */
+.active-link {
+    font-weight: 900 !important; /* Bold tebal untuk Dashboard */
+}
+
+/* Tombol Keluar */
+.logout-btn {
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* --- MAIN CONTENT --- */
+.main-content {
+    /* Gradasi kuning pudar yang lembut */
+    background: linear-gradient(135deg, #ffffff 40%, #ffefba 100%);
+    overflow-y: auto;
+}
+
+/* --- STAT BOX --- */
+.stat-box {
+    background-color: #fceeb5; /* Kuning pastel */
+    width: 180px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 6px 15px rgba(0,0,0,0.05);
+}
+.stat-label { font-size: 14px; font-weight: bold; margin-bottom: 5px; }
+.stat-value { font-size: 32px; font-weight: bold; }
+
+/* --- COURSE CARD --- */
+.section-title { font-size: 28px; font-weight: bold; margin-top: 30px;}
+
+.course-card {
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+}
+.card-img-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #000;
+}
+.card-body-custom {
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+/* ================= Tambahan CSS Modal ================= */
+
+/* 1. Overlay Latar Belakang (Layar Gelap) */
+.modal-overlay {
+    display: none; /* Disembunyikan secara default */
+    position: fixed; /* Tetap di tempat saat di-scroll */
+    z-index: 1050; /* Pastikan di atas elemen lain (di atas sidebar) */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Warna hitam transparan */
+    /* Menggunakan Flexbox untuk menengahkan kotak modal */
+    align-items: center;
+    justify-content: center;
+}
+
+/* 2. Kotak Konten Modal (Warna Kuning) */
+.modal-content-custom {
+    background-color: #ffe082; /* Warna kuning sesuai gambar */
+    padding: 40px 30px;
+    border-radius: 15px; /* Sudut membulat */
+    width: 90%;
+    max-width: 450px; /* Lebar maksimal agar tidak terlalu besar di desktop */
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Bayangan halus */
+    /* Menggunakan font sans-serif tebal agar mirip gambar referensi */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 3. Judul Modal */
+.modal-title {
+    font-weight: 900; /* Sangat tebal */
+    font-style: italic;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+/* 4. Container Tombol */
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Jarak antar tombol Yes dan No */
+}
+
+/* 5. Gaya Tombol (Yes & No) */
+.btn-logout-confirm {
+    background-color: #8B5A2B; /* Warna cokelat */
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    padding: 8px 35px;
+    border: 2px solid #000; /* Border hitam tebal */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-logout-confirm:hover {
+    background-color: #6d4520; /* Efek hover sedikit lebih gelap */
+}
+/* ================= Batas Tambahan CSS Modal ================= */

@@ -1,0 +1,165 @@
+/* Base Styles */
+body {
+    background-color: #F9F5F0;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+.brand-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+/* Navbar Search Bar */
+.search-bar {
+    background: #F4F4F4;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 200px;
+}
+
+/* Filter Section */
+.filter-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.filter-input-box {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-input-box input {
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.filter-premium-card {
+    background-color: #C6AB6C; /* Warna emas gelap sesuai gambar */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.premium-text {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.btn-add-yellow {
+    background-color: #FFD700; /* Kuning terang sesuai tombol baru */
+    color: #333;
+    font-weight: 600;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Result Title */
+.search-keyword {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Recipe Card Mini */
+.results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.recipe-card-mini {
+    background: white;
+    border-radius: 12px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.recipe-card-mini img {
+    width: 220px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-mini-body {
+    padding: 20px 25px;
+    flex: 1;
+}
+
+.recipe-name-mini {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.bookmark-icon {
+    color: #C6AB6C;
+    font-size: 1.4rem;
+}
+
+.recipe-excerpt-mini {
+    font-size: 0.85rem;
+    color: #777;
+    margin: 10px 0;
+}
+
+.recipe-stats-mini {
+    display: flex;
+    gap: 15px;
+    font-size: 0.8rem;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.recipe-author-mini {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.recipe-author-mini img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+/* Footer */
+.footer {
+    background-color: #D4B66B;
+    margin-top: 80px;
+}
+
+.footer-logo { font-size: 2.2rem; }
+.tagline { font-weight: 600; font-family: 'Playfair Display', serif; }
+.social-icons i { font-size: 1.3rem; margin-left: 15px; cursor: pointer; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .recipe-card-mini { flex-direction: column; }
+    .recipe-card-mini img { width: 100%; height: 180px; }
+}

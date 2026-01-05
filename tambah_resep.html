@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garis Rasa - Tambah Resep</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_tambah_resep.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent py-3">
+        <div class="container">
+            <a class="navbar-brand logo-text" href="#">Garis Rasa</a>
+            
+            <div class="d-none d-md-flex search-bar-container mx-auto">
+                <div class="input-group">
+                    <span class="input-group-text bg-white border-end-0"><i class="bi bi-search"></i></span>
+                    <input type="text" class="form-control border-start-0 ps-0" placeholder="...">
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link small-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link small-link" href="#">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link small-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link small-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-person-circle fs-5"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-container pb-5">
+        
+        <div class="text-center mb-5">
+            <h1 class="page-title">Silahkan Tambah Resep</h1>
+        </div>
+
+        <form>
+            <div class="row mb-5">
+                <div class="col-md-4 mb-3">
+                    <div class="image-upload-box main-upload d-flex justify-content-center align-items-center">
+                        <div class="text-center text-muted">
+                            <i class="bi bi-plus-lg position-absolute translate-middle" style="font-size: 0.8rem; margin-top: -10px; margin-left: -10px;"></i>
+                            <i class="bi bi-images fs-1"></i>
+                        </div>
+                        <input type="file" class="file-input">
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="mb-3">
+                        <input type="text" class="form-control custom-input" placeholder="Judul Makanan">
+                    </div>
+                    <div class="mb-3 h-100">
+                        <textarea class="form-control custom-input" rows="8" placeholder="Bahan-bahan"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div id="steps-container">
+                <div class="row step-row mb-4">
+                    <div class="col-md-3 mb-2">
+                        <div class="image-upload-box step-upload d-flex justify-content-center align-items-center">
+                            <div class="text-center text-muted">
+                                <i class="bi bi-plus-lg position-absolute" style="font-size: 0.7rem; margin-top: -15px; margin-left: -15px;"></i>
+                                <i class="bi bi-images fs-2"></i>
+                            </div>
+                            <input type="file" class="file-input">
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <textarea class="form-control custom-input h-100" placeholder="Potong kecil-kecil bawang merah nya"></textarea>
+                    </div>
+                </div>
+
+                <div class="row step-row mb-4">
+                    <div class="col-md-3 mb-2">
+                        <div class="image-upload-box step-upload d-flex justify-content-center align-items-center">
+                            <div class="text-center text-muted">
+                                <i class="bi bi-plus-lg position-absolute" style="font-size: 0.7rem; margin-top: -15px; margin-left: -15px;"></i>
+                                <i class="bi bi-images fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <textarea class="form-control custom-input h-100" placeholder="Potong kecil-kecil bawang merah nya"></textarea>
+                    </div>
+                </div>
+                
+                <div class="row step-row mb-4">
+                    <div class="col-md-3 mb-2">
+                        <div class="image-upload-box step-upload d-flex justify-content-center align-items-center">
+                            <div class="text-center text-muted">
+                                <i class="bi bi-plus-lg position-absolute" style="font-size: 0.7rem; margin-top: -15px; margin-left: -15px;"></i>
+                                <i class="bi bi-images fs-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <textarea class="form-control custom-input h-100" placeholder="Potong kecil-kecil bawang merah nya"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-footer mt-5 pt-4 d-flex justify-content-between align-items-center">
+                <button type="button" class="btn btn-brown px-4 py-2" id="addStepBtn">
+                    <i class="bi bi-plus-lg me-2"></i> Langkah
+                </button>
+
+                <div class="d-flex gap-3">
+                    <button type="button" class="btn btn-brown-outline px-4 py-2">
+                        <i class="bi bi-trash3 me-2"></i> Hapus
+                    </button>
+                    <button type="submit" class="btn btn-white px-4 py-2"><a href="profile.html">
+                        <i class="bi bi-save me-2"></i> Simpan</a>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('addStepBtn').addEventListener('click', function() {
+            const container = document.getElementById('steps-container');
+            const newStep = document.createElement('div');
+            newStep.className = 'row step-row mb-4';
+            newStep.innerHTML = `
+                <div class="col-md-3 mb-2">
+                    <div class="image-upload-box step-upload d-flex justify-content-center align-items-center">
+                        <div class="text-center text-muted">
+                            <i class="bi bi-plus-lg position-absolute" style="font-size: 0.7rem; margin-top: -15px; margin-left: -15px;"></i>
+                            <i class="bi bi-images fs-2"></i>
+                        </div>
+                        <input type="file" class="file-input">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <textarea class="form-control custom-input h-100" placeholder="Tulis langkah selanjutnya..."></textarea>
+                </div>
+            `;
+            container.appendChild(newStep);
+        });
+    </script>
+</body>
+</html>

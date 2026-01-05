@@ -1,0 +1,291 @@
+/* Variables */
+  :root {
+      --bg-cream: #fcfbf7;
+      --accent-gold: #a67c00;
+      --dark-brown: #94611d;
+      --card-bg: #ffffff;
+      --bg-color: #fcfbf7;
+      --accent-brown: #9b6c2a;
+      --text-muted: #555;
+      --footer-bg: #dcd3bc;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-cream);
+    color: #333;
+}
+
+/* Styling Navbar */
+.brand-font {
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    line-height: 1;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Search Bar Styling */
+.search-wrapper {
+    max-width: 500px; /* Atur agar tidak terlalu lebar tapi tetap dominan */
+}
+
+.search-bar {
+    border: 1px solid #ced4da;
+    border-radius: 8px; /* Sudut sedikit melengkung sesuai gambar */
+    overflow: hidden;
+}
+
+.search-bar .input-group-text, 
+.search-bar .form-control {
+    border: none;
+    padding: 8px 12px;
+}
+
+.search-bar input::placeholder {
+    color: #adb5bd;
+}
+/* Profil Icon */
+.profile-icon {
+    font-size: 1.8rem;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .home-text {
+        display: none;
+    }
+    .search-wrapper {
+        margin: 0 5px;
+    }
+}
+/* Responsivitas Mobile */
+@media (max-width: 768px) {
+    .search-wrapper {
+        margin: 0 10px;
+    }
+    .brand-font {
+        font-size: 1rem;
+    }
+}
+/* Nav Links */
+.nav-link {
+    font-family: 'Poppins', sans-serif;
+    color: #000 !important;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Sign Up Button sesuai gambar */
+.btn-signup {
+    background-color: #9c6c2e; /* Warna cokelat keemasan sesuai gambar */
+    color: #fff !important;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+.btn-signup:hover {
+    background-color: #7d5625;
+}
+
+/* Typography */
+h1, h2, h3, .brand-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Components */
+.search-container {
+    width: 40%;
+}
+
+/* Container harus relative agar ikon absolute tidak lari keluar */
+.add-recipe-wrapper {
+    position: relative;
+    display: inline-block; /* Menyesuaikan lebar tombol */
+}
+
+/* Styling Ikon Mahkota */
+.crown-icon {
+    position: absolute;
+    top: -18px;            /* Mengatur jarak ke atas tombol */
+    left: 8px;             /* Mengatur jarak dari sisi kiri tombol */
+    font-size: 1.2rem;
+    color: #000000;        /* Warna hitam sesuai gambar */
+    transform: rotate(-10deg); /* Sedikit miring agar lebih estetik */
+    z-index: 10;
+}
+
+/* Tombol Gold yang sudah diperbaiki */
+.btn-add-recipe {
+    background-color: #FFD41D; /* Warna Gold */
+    color: #000000;            /* Teks Hitam */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;        /* Menjaga tumpukan tombol */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-add-recipe:hover {
+    background-color: #e6be1a;
+    transform: translateY(-2px);
+}
+
+/* Cards */
+.section-title {
+    margin: 50px 0 25px;
+    font-weight: 600;
+}
+
+.recipe-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: scale(1.03);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.recipe-card h5 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.recipe-meta {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Premium Section */
+.premium-box {
+    background-color: #eaddc0;
+    border-radius: 25px;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+
+.premium-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.premium-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* About & Footer */
+.about-text { 
+    line-height: 1.8; 
+    font-size: 0.95rem; 
+    font-style: italic; 
+    text-align: justify;
+}
+
+.footer-area { 
+    background-color: var(#dcd3bc); 
+    border-top: 1px solid #ccc; 
+    margin-top: 80px;
+}
+
+.nav-link:hover {
+    color: var(#dcd3bc) !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-container { width: 100%; margin: 20px 0; }
+    .hero-title { font-size: 2.5rem; }
+}/* About & Footer */
+.about-text { 
+    line-height: 1.8; 
+    font-size: 0.95rem; 
+    font-style: italic; 
+    text-align: justify;
+}
+
+/* Variables - Pastikan definisi ini ada di bagian atas */
+:root {
+    --bg-cream: #fcfbf7;
+    --accent-brown: #9b6c2a;
+    --footer-bg: #dcd3bc; /* Warna beige kecokelatan sesuai gambar */
+    --text-muted: #555;
+}
+
+/* Footer Styling */
+.footer-area {
+    background-color: var(--footer-bg); /* Perbaikan dari var(#dcd3bc) */
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin-top: 80px;
+    width: 100%;
+}
+
+/* Tipografi Footer */
+.footer-area .brand-font {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.footer-area p {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+/* Social Icons */
+.social-icons i {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: var(--accent-brown);
+}
+
+/* Nav Link Hover Fix */
+.nav-link:hover {
+    color: var(--accent-brown) !important;
+}
+
+/* Menyesuaikan jarak container di footer */
+@media (max-width: 768px) {
+    .footer-area .text-end, 
+    .footer-area .text-center {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+}

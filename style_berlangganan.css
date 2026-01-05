@@ -1,0 +1,223 @@
+/* Styling Global */
+:root {
+    --bg-gradient-top: #fceeb5;  /* Warna kuning atas */
+    --bg-gradient-bottom: #fffcf5; /* Warna putih kekuningan bawah */
+    --accent-brown: #9b6c2a;     /* Warna coklat tombol & alert */
+    --text-dark: #2c2c2c;
+}
+
+body {
+    /* Membuat background gradient dari atas ke bawah */
+    background: linear-gradient(180deg, var(--bg-gradient-top) 0%, var(--bg-gradient-bottom) 50%, #ffffff 100%);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+}
+
+/* Mengatur Layout Tengah */
+.main-container {
+    min-height: 60vh; /* Agar konten berada agak di tengah vertikal */
+}
+
+/* 1. Styling Alert (Kotak Peringatan di Atas) */
+.custom-alert {
+    background-color: #b08d55; /* Warna coklat/emas gelap sesuai gambar */
+    color: #000;
+    font-weight: 600;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+/* 2. Typography Judul */
+.page-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-top: 30px;
+}
+
+/* 3. Pricing Section */
+.pricing-card h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+}
+
+.custom-divider {
+    border-top: 2px solid #333; /* Garis hitam tebal */
+    opacity: 1; /* Bootstrap default opacity override */
+}
+
+.description-text {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* 4. Button Styling */
+.btn-subscribe {
+    background-color: #8c5e18; /* Coklat tua */
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 50px; /* Membuat tombol bulat lonjong */
+    border: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-subscribe:hover {
+    background-color: #6d4610;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Styling di dalam Modal */
+.payment-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.method-font {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.payment-option-card {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.payment-option-card:hover {
+    border-color: var(--accent-brown);
+    transform: translateY(-2px);
+}
+
+.bank-img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(0.2);
+}
+
+.bank-img:hover {
+    filter: grayscale(0);
+}
+
+/* Mengatur transisi panah saat klik Transfer Bank */
+[aria-expanded="true"] .bi-chevron-down {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+[aria-expanded="false"] .bi-chevron-down {
+    transform: rotate(0deg);
+    transition: 0.3s;
+}/* --- CSS KHUSUS MODAL PEMBAYARAN --- */
+
+/* 1. Background Modal (Kuning Pucat) */
+.modal-custom-bg {
+    background-color: #fff5cc; /* Warna kuning lembut sesuai gambar */
+    /* Atau gunakan gradient halus jika diinginkan */
+    background: linear-gradient(180deg, #ffeebb 0%, #fffbf2 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* 2. Judul (Font Serif Italic) */
+.payment-title {
+    font-family: 'Times New Roman', Times, serif; /* Menggunakan font serif klasik */
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #000;
+    margin-top: 0;
+}
+
+/* 3. Garis Pemisah (Hitam Solid) */
+.custom-divider-black {
+    width: 100%;
+    height: 2px;
+    background-color: #000; /* Garis hitam tebal */
+    border-radius: 2px;
+}
+
+/* 4. Kartu Pembayaran (Kotak Putih) */
+.payment-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Bayangan halus agar timbul */
+    border: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.payment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* 5. Teks Metode (Qris, Transfer Bank) */
+.method-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+/* 6. Logo QRIS & Icon */
+.qris-logo {
+    height: 22px;
+    width: auto;
+}
+
+.icon-wrapper {
+    width: 40px; /* Lebar tetap agar teks sejajar rapi */
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* 7. Kartu Bank Kecil (Di dalam dropdown) */
+.bank-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+
+.bank-card:hover {
+    border-color: #dab66e; /* Highlight warna emas saat hover */
+}
+
+.bank-card img {
+    max-width: 100%;
+    max-height: 25px;
+    object-fit: contain;
+}
+
+/* Animasi Panah Dropdown */
+.transition-icon {
+    transition: transform 0.3s ease;
+}
+
+[aria-expanded="true"] .transition-icon {
+    transform: rotate(180deg);
+}
+

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garis Rasa - Discover New Recipe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style_index.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg py-3 bg-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
+        <a class="navbar-brand brand-font m-0" href="#">Garis<br>Rasa</a>
+
+        <div class="search-wrapper mx-4 flex-grow-1 d-none d-lg-block">
+            <div class="input-group search-bar">
+                <span class="input-group-text bg-white border-end-0 shadow-none">
+                    <i class="bi bi-search text-muted"></i>
+                </span>
+                <input type="text" class="form-control border-start-0 shadow-none" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="d-flex align-items-center">
+            <ul class="navbar-nav flex-row align-items-center me-3">
+                <li class="nav-item"><a class="nav-link px-2" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="#recipes">Recipes</a></li>
+                <li class="nav-item"><a class="nav-link px-2" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link px-2 me-2" href="#contact">Contact</a></li>
+            </ul>
+            <a href="#" class="btn btn-signup px-4 py-2" data-bs-toggle="modal" data-bs-target="#loginModal">Sign Up</a>
+        </div>
+    </div>
+</nav>
+
+    <section class="container hero-container" id="home">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <h1 class="hero-title">Discover New<br>Recipe</h1>
+                <p class="hero-subtitle mt-4">Kami menyediakan kelas online berstruktur dan Resep Bintang 5 eksklusif sebagai konten premium yang siap Anda kuasai.</p>
+            </div>
+            <div class="col-lg-5 text-end">
+                <img src="img/foto_hero.jpg" class="img-fluid rounded-3 shadow-sm hero-img" alt="Ingredients">
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 pt-5" id="recipes">
+    <h3 class="section-title mb-4">Menu hari ini</h3>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="recipe-card" onclick="showPremiumAlert('Ayam Kecap')">
+                <img src="img/Ayam_Kecap.jpg" alt="Ayam Kecap">
+                <div class="p-4">
+                    <h5>Ayam Kecap</h5>
+                    <div class="d-flex justify-content-center gap-3 text-muted small">
+                        <span>30 Mins</span>
+                        <span>4.5 ★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="recipe-card" onclick="showPremiumAlert('Nasi Ayam Kecap')">
+                <img src="img/Nasi_ayamkecap.jpg" alt="Nasi Ayam">
+                <div class="p-4">
+                    <h5>Nasi Ayam Kecap</h5>
+                    <div class="d-flex justify-content-center gap-3 text-muted small">
+                        <span>60 Mins</span>
+                        <span>4.5 ★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="recipe-card" onclick="showPremiumAlert('Nasi Goreng')">
+                <img src="img/Nasi_Goreng.jpg" alt="Nasi Goreng">
+                <div class="p-4">
+                    <h5>Nasi Goreng</h5>
+                    <div class="d-flex justify-content-center gap-3 text-muted small">
+                        <span>30 Mins</span>
+                        <span>4.5 ★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="container premium-section">
+        <div class="row align-items-start">
+            <div class="col-lg-6 pe-lg-5">
+                <h2 class="section-title mb-5">Siap Tingkatkan Skill ke Level Chef Bintang 5?</h2>
+                
+                <div class="premium-feature">
+                    <h6>Kelas Online Full Access</h6>
+                    <p>Akses penuh ke seluruh materi belajar dan teknik memasak A-Z. Dapatkan video HD step-by-step dengan fokus mendalam pada teknik, bukan sekadar bahan.</p>
+                </div>
+                
+                <div class="premium-feature">
+                    <h6>Resep Bintang 5 Eksklusif</h6>
+                    <p>Akses resep orisinal yang belum pernah dipublikasikan dari Chef Hotel Partner. Resep dilengkapi panduan detail mise en place, costing, dan plating profesional.</p>
+                </div>
+                
+                <div class="premium-feature">
+                    <h6>Kurikulum Profesional</h6>
+                    <p>Belajar dari Mentor Chef Profesional dengan kurikulum yang terstruktur, bertujuan untuk mengubah hobi memasak Anda menjadi keahlian profesional.</p>
+                </div>
+                <a href="#" class="btn btn-signup px-4 py-2" data-bs-toggle="modal" data-bs-target="#loginModal">Upgrade ke premium</a>
+            </div>
+            <div class="col-lg-6 mt-5 mt-lg-0">
+                <img src="img/poto_premium.jpg" class="img-fluid rounded-3 shadow-sm chef-img" alt="Chef Working">
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-5 pt-5 mb-5" id="about">
+        <h2 class="section-title mb-4">Apa itu Garis Rasa?</h2>
+        <p class="about-text">
+            Garis Rasa adalah Sistem Edukasi Kuliner Premium yang hadir sebagai solusi otoritatif untuk mengisi kekosongan antara resep masakan rumahan dan ilmu otentik dari chef high-end. Kami memahami sulitnya meningkatkan skill dari resep umum ke level profesional karena kualitas resep online yang seringkali "setengah matang". Misi kami adalah mengubah hobi memasak Anda menjadi keahlian profesional. Untuk mencapai itu, kami menyediakan kurikulum chef terstruktur, Kelas Online Full Access, dan Resep Bintang 5 eksklusif sebagai konten premium.
+        </p>
+    </section>
+
+    <footer class="footer-area" id="contact">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <h2 class="brand-font">Garis<br>Rasa</h2>
+                </div>
+                <div class="col-md-4 text-center mt-4 mt-md-0">
+                    <p class="fst-italic mb-1">"Edukasi Kuliner Premium"</p>
+                    <p class="small opacity-75">© 2025 Garis Rasa</p>
+                </div>
+                <div class="col-md-4 text-md-end mt-4 mt-md-0">
+                    <p class="mb-1">08xx-xxxx-xxxx</p>
+                    <p class="mb-3">Garis.Rasa@gmail.com</p>
+                    <div class="social-icons fs-4">
+                        <i class="bi bi-instagram me-3"></i>
+                        <i class="bi bi-tiktok me-3"></i>
+                        <i class="bi bi-youtube"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 p-4" style="background: linear-gradient(180deg, #FFFFFF 40%, #D4A34D 100%); border-radius: 15px;">
+            <div class="modal-body pt-4 pb-4">
+                
+                <div class="text-center mb-4">
+                    <h2 class="brand-font" style="font-family: serif; font-weight: bold; font-size: 2rem; line-height: 1;">Garis<br>Rasa</h2>
+                </div>
+
+                <div id="view-login">
+                    <form>
+                        <div class="mb-3 px-4 text-start">
+                            <label class="form-label fw-bold mb-1">Username</label>
+                            <input type="text" class="form-control" style="border-radius: 5px;">
+                        </div>
+                        <div class="mb-4 px-4 text-start">
+                            <label class="form-label fw-bold mb-1">Password</label>
+                            <input type="password" class="form-control" style="border-radius: 5px;">
+                        </div>
+                        <div class="text-center mb-3">
+                        <button type="button" id="btnLogin" class="btn px-4" 
+                                style="background-color: #9C6B2D; color: white; border-radius: 5px;" 
+                                onclick="handleLogin()">
+                            Login
+                        </button>
+                    </div>
+                    </form>
+                    <div class="text-center">
+                        <p class="mb-0 fw-bold" style="font-size: 0.9rem; cursor: pointer;" onclick="showSignUp()">Belum punya akun ?</p>
+                    </div>
+                </div>
+
+                <div id="view-signup" style="display: none;">
+    <form>
+        <div class="mb-3 px-4 text-start">
+            <label class="form-label fw-bold mb-1">Username</label>
+            <input type="text" id="regUser" class="form-control" style="border-radius: 5px;">
+        </div>
+        <div class="mb-3 px-4 text-start">
+            <label class="form-label fw-bold mb-1">E-mail</label>
+            <input type="email" id="regEmail" class="form-control" style="border-radius: 5px;">
+        </div>
+        <div class="mb-4 px-4 text-start">
+            <label class="form-label fw-bold mb-1">Password</label>
+            <input type="password" id="regPass" class="form-control" style="border-radius: 5px;">
+        </div>
+        <div class="text-center mb-3">
+            <button type="button" id="btnSignUp" class="btn px-4" 
+                    style="background-color: #9C6B2D; color: white; border-radius: 5px;" 
+                    onclick="handleSignUp()">
+                Sign up
+            </button>
+        </div>
+    </form>
+    <div class="text-center">
+        <p class="mb-0 fw-bold" style="font-size: 0.9rem; cursor: pointer;" onclick="showLogin()">Sudah punya akun? Login</p>
+    </div>
+</div>
+
+                <p class="text-center text-muted mt-4 mx-auto" style="font-size: 0.6rem; line-height: 1.4; max-width: 90%;">
+                    Dengan masuk/mendaftar, Anda menyetujui Syarat dan Ketentuan dan Kebijakan Privasi Garis Rasa. Anda juga setuju untuk menerima komunikasi pemasaran dari Garis Rasa ke alamat email yang Anda berikan. Halaman ini dilindungi oleh reCAPTCHA dan tunduk pada Pernyataan Layanan dan Kebijakan Privasi Google.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Fungsi untuk menampilkan form Sign Up
+    function showSignUp() {
+        document.getElementById('view-login').style.display = 'none';
+        document.getElementById('view-signup').style.display = 'block';
+    }
+
+    // Fungsi untuk kembali ke form Login
+    function showLogin() {
+        document.getElementById('view-signup').style.display = 'none';
+        document.getElementById('view-login').style.display = 'block';
+    }
+
+    // Fungsi showPremiumAlert yang memanggil modal peringatan login (seperti sebelumnya)
+    function showPremiumAlert() {
+        var myModal = new bootstrap.Modal(document.getElementById('loginAlertModal'));
+        myModal.show();
+    }
+</script>
+<script>
+    function handleLogin() {
+        // Ambil elemen tombol untuk memberikan efek loading (opsional)
+        const btn = document.getElementById('btnLogin');
+        btn.innerHTML = 'Logging in...';
+        btn.disabled = true;
+
+        // Simulasi delay 1 detik agar terasa seperti proses asli
+        setTimeout(function() {
+            // Ganti 'index.html' dengan nama file halaman tujuan Anda
+            window.location.href = 'index_gratis.html'; 
+        }, 1000);
+    }
+
+    // Pastikan juga tombol Sign Up di form sebelah melakukan hal yang sama
+    function handleSignUp() {
+        alert('Pendaftaran Berhasil! Silahkan Login.');
+        showLogin(); // Kembali ke tampilan login
+    }
+
+</script>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="loginAlertModal" tabindex="-1" aria-labelledby="loginAlertModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content premium-alert-content">
+            <div class="modal-body text-center p-5">
+                <div class="brand-font mb-4" style="font-size: 1.5rem; line-height: 1;">
+                    Garis<br>Rasa
+                </div>
+                
+                <h4 class="fw-bold mb-4">Silahkan Login Terlebih dahulu</h4>
+                
+                <button type="button" class="btn btn-klik-disini" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">
+    Klik Disini
+</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
